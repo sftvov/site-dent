@@ -1,0 +1,26 @@
+@import 'mixins';
+
+@import 'fonts';
+
+body {
+	font-family: rostov;
+	font-size: 40px;
+	display: flex;
+}
+p {
+	font-size: 30px;
+	@media (max-width: 767px) {
+		font-size: 15px;
+	}
+}
+.img {
+	font-family: wider;
+	font-size: 30px;
+	background-image: url('../img/01.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	@media (max-width: 767px) {
+		font-size: 20px;
+	}
+}
