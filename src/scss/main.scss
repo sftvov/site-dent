@@ -1,0 +1,7 @@
+.banner {
+	background-image: url('/img/first-banner.png');
+	min-height: 60vh;
+	&__img {
+		width: 100%;
+	}
+}

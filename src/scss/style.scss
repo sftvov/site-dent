@@ -1,20 +1,22 @@
 @import 'mixins';
 @import 'fonts';
 
-$fontFamily: 'Arial';
-$minWidth: 320px;
+$fontFamily: 'Montserrat';
+$minWidth: 320;
 $maxWidth: 1920;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1220;
 $md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md2: 982;
+$md3: 770;
 
 @import 'null';
 
 body {
 	color: #000;
 	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 0em;
+	font-style: normal;
 	&._lock {
 		overflow: hidden;
 	}
@@ -30,61 +32,44 @@ body {
 	}
 }
 
+.page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	flex: 1 1 auto;
+}
+
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
+
 	@media (max-width: $md1+px) {
 		max-width: 970px;
 	}
+
 	@media (max-width: $md2+px) {
 		max-width: 750px;
 	}
+
 	@media (max-width: $md3+px) {
 		max-width: none;
 		padding: 0 10px;
 	}
 }
 
-.page {
-	flex: 1 1 auto;
+._align-flex {
+	display: flex;
+	align-items: center;
 }
 
-.header {
-	&__top-wrapper {
-		border-bottom: 1px solid #127bd733;
-	}
-
-	&__top-content {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	&__logo-wraper {
-	}
-
-	&__company-name-wraper {
-	}
-
-	&__location-wraper {
-	}
-
-	&__location {
-	}
-
-	&__tel-wraper {
-	}
-
-	&__tel {
-	}
-
-	&__menu-wraper {
-	}
-
-	&__menu {
-		display: flex;
-		justify-content: center;
-		& li {
-			padding-right: 46px;
-		}
-	}
+._bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	max-width: $maxWidth + px;
 }
+
+@import 'header';
+@import 'main';

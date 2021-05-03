@@ -1,0 +1,67 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&__top-wrapper {
+		border-bottom: 1px solid #127bd733;
+	}
+
+	&__top-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo-wraper {
+	}
+
+	&__logo {
+		margin: 18px 0 5px 0;
+	}
+
+	&__company-name {
+		font-family: 'FiraSans';
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 43px;
+		color: #127bd7;
+		padding-left: 29px;
+	}
+
+	&__right-container {
+		justify-content: space-between;
+		width: 492px;
+	}
+
+	&__location-wraper {
+	}
+
+	&__location {
+		font-size: 16px;
+		line-height: 24px;
+		margin-left: 16px;
+	}
+
+	&__tel-wraper {
+	}
+
+	&__tel {
+		font-family: 'Roboto';
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+		margin-left: 16px;
+	}
+
+	&__menu-wraper {
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: center;
+		margin: 24px 0;
+		& li {
+			@include adaptiv-value('padding-right', 46, 5, $md1, $minWidth);
+		}
+	}
+}
