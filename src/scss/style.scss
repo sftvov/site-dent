@@ -14,6 +14,7 @@ $md3: 770;
 body {
 	color: #000;
 	font-size: 18px;
+	@include adaptiv-value('font-size', 16, 14, $md1, $minWidth);
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
@@ -45,20 +46,12 @@ body {
 	margin: 0 auto;
 
 	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-
-	@media (max-width: $md3+px) {
 		max-width: none;
 		padding: 0 10px;
 	}
 }
 
-._align-flex {
+._row-flex {
 	display: flex;
 	align-items: center;
 }

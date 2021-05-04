@@ -7,12 +7,16 @@
 	}
 
 	&__top-content {
-		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		@media (max-width: $md3+px) {
+			flex-direction: column;
+		}
 	}
 
 	&__logo-wraper {
+		@media (max-width: $md3+px) {
+			order: 1;
+		}
 	}
 
 	&__logo {
@@ -21,23 +25,24 @@
 
 	&__company-name {
 		font-family: 'FiraSans';
-		font-size: 36px;
+		font-size: 2em;
 		font-weight: 700;
 		line-height: 43px;
 		color: #127bd7;
-		padding-left: 29px;
+		margin-left: 29px;
+		@include adaptiv-value('margin-left', 20, 0, $md1, $minWidth);
 	}
 
 	&__right-container {
-		justify-content: space-between;
-		width: 492px;
 	}
 
 	&__location-wraper {
+		margin-right: 52px;
+		@include adaptiv-value('margin-right', 26, 8, $md1, $minWidth);
 	}
 
 	&__location {
-		font-size: 16px;
+		font-size: 0.89em;
 		line-height: 24px;
 		margin-left: 16px;
 	}
@@ -47,7 +52,7 @@
 
 	&__tel {
 		font-family: 'Roboto';
-		font-size: 20px;
+		font-size: 1.11em;
 		font-weight: 700;
 		line-height: 24px;
 		margin-left: 16px;
@@ -61,7 +66,8 @@
 		justify-content: center;
 		margin: 24px 0;
 		& li {
-			@include adaptiv-value('padding-right', 46, 5, $md1, $minWidth);
+			padding-right: 46px;
+			@include adaptiv-value('padding-right', 30, 5, $md1, $minWidth);
 		}
 	}
 }

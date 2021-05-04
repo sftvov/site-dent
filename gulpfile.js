@@ -180,7 +180,11 @@ let build = gulp.series(
 	gulp.parallel(js, css, html, images, fonts),
 	fontsStyle
 );
-let watch = gulp.parallel(build, watchFiles, browserSync);
+let watch = gulp.parallel(
+	// build,
+	watchFiles,
+	browserSync
+);
 
 exports.clean = clean;
 exports.fontsStyle = fontsStyle;
