@@ -1,7 +1,6 @@
 .header {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	&__top-wrapper {
 		border-bottom: 1px solid #127bd733;
 	}
@@ -14,13 +13,13 @@
 	}
 
 	&__logo-wraper {
+		padding: 18px 0 5px 0;
 		@media (max-width: $md3+px) {
 			order: 1;
 		}
 	}
 
 	&__logo {
-		margin: 18px 0 5px 0;
 	}
 
 	&__company-name {
@@ -41,13 +40,22 @@
 		@include adaptiv-value('margin-right', 26, 8, $md1, $minWidth);
 	}
 
+	&__location-img {
+		width: 27px;
+		@include adaptiv-value('width', 16, 9, $md1, $minWidth);
+	}
+
 	&__location {
 		font-size: 0.89em;
 		line-height: 24px;
-		margin-left: 16px;
 	}
 
 	&__tel-wraper {
+	}
+
+	&__tel-img {
+		width: 34px;
+		@include adaptiv-value('width', 25, 12, $md1, $minWidth);
 	}
 
 	&__tel {
@@ -55,7 +63,6 @@
 		font-size: 1.11em;
 		font-weight: 700;
 		line-height: 24px;
-		margin-left: 16px;
 	}
 
 	&__menu-wraper {

@@ -6,15 +6,15 @@ $minWidth: 320;
 $maxWidth: 1920;
 $maxWidthContainer: 1220;
 $md1: $maxWidthContainer + 12;
-$md2: 982;
-$md3: 770;
+$md2: 992;
+$md3: 768;
 
 @import 'null';
 
 body {
 	color: #000;
 	font-size: 18px;
-	@include adaptiv-value('font-size', 16, 14, $md1, $minWidth);
+	@include adaptiv-value('font-size', 16, 12, $md1, $minWidth);
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
@@ -39,6 +39,18 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	flex: 1 1 auto;
+}
+
+.icon-span {
+	display: flex;
+	align-items: center;
+	& > span {
+		margin-left: 16px;
+		@include adaptiv-value('margin-left', 10, 5, $md1, $minWidth);
+	}
+	& img {
+		width: 100%;
+	}
 }
 
 ._container {
