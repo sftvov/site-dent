@@ -8,18 +8,17 @@
 	&__top-content {
 		justify-content: space-between;
 		@media (max-width: $md3+px) {
-			flex-direction: column;
+			// flex-direction: column;
 		}
 	}
 
 	&__logo-wraper {
 		padding: 18px 0 5px 0;
-		@media (max-width: $md3+px) {
-			order: 1;
-		}
 	}
 
 	&__logo {
+		width: 77px;
+		@include adaptiv-value('width', 55, 30, $md1, $minWidth);
 	}
 
 	&__company-name {
@@ -28,8 +27,6 @@
 		font-weight: 700;
 		line-height: 43px;
 		color: #127bd7;
-		margin-left: 29px;
-		@include adaptiv-value('margin-left', 20, 0, $md1, $minWidth);
 	}
 
 	&__right-container {
@@ -38,6 +35,9 @@
 	&__location-wraper {
 		margin-right: 52px;
 		@include adaptiv-value('margin-right', 26, 8, $md1, $minWidth);
+		@media (max-width: $md3+px) {
+			display: none;
+		}
 	}
 
 	&__location-img {
@@ -75,6 +75,9 @@
 		& li {
 			padding-right: 46px;
 			@include adaptiv-value('padding-right', 30, 5, $md1, $minWidth);
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 	}
 }
