@@ -6,22 +6,43 @@ $minWidth: 320;
 $maxWidth: 1920;
 $maxWidthContainer: 1220;
 $md1: $maxWidthContainer + 12;
-$md2: 1024;
-$md3: 768;
-$md4: 540;
+$md2: 1023;
+$md3: 767;
+$md4: 539;
 
 @import 'null';
 
 body {
 	color: #000;
 	font-size: 18px;
-	@include adaptiv-value('font-size', 16, 12, $md1, $md3);
+	@include adaptiv-value('font-size', 16, 14, $md1, $md3);
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
 	&._lock {
 		overflow: hidden;
 	}
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+
+	@media (max-width: $md1+px) {
+		max-width: $md2 - 20 + px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: $md3 - 20 + px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+._row-flex {
+	display: flex;
+	align-items: center;
 }
 
 .wrapper {
@@ -47,43 +68,20 @@ body {
 	align-items: center;
 	& > span {
 		margin-left: 16px;
-		@include adaptiv-value('margin-left', 10, 5, $md1, $minWidth);
+		@include adaptiv-value('margin-left', 8, 4, $md1, $minWidth);
 	}
 	& img {
 		width: 100%;
 	}
 }
 
-._container {
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-
-	@media (max-width: $md1+px) {
-		max-width: $md2 - 20 + px;
+.content {
+	&__block {
+		padding: 20px 0;
+		& p {
+			padding: 5px 0;
+		}
 	}
-	@media (max-width: $md2+px) {
-		max-width: $md3 - 20 + px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: $md4 - 20 + px;
-	}
-	@media (max-width: $md4+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
-}
-
-._row-flex {
-	display: flex;
-	align-items: center;
-}
-
-._bg {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	max-width: $maxWidth + px;
 }
 
 @import 'header';

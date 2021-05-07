@@ -1,24 +1,24 @@
 .header {
+	position: fixed;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
+	background-color: #fff;
 	&__top-wrapper {
+		padding: 18px 0 5px 0;
 		border-bottom: 1px solid #127bd733;
 	}
 
 	&__top-content {
 		justify-content: space-between;
-		@media (max-width: $md3+px) {
-			// flex-direction: column;
-		}
 	}
 
 	&__logo-wraper {
-		padding: 18px 0 5px 0;
 	}
 
 	&__logo {
 		width: 77px;
-		@include adaptiv-value('width', 55, 30, $md1, $minWidth);
+		@include adaptiv-value('width', 55, 35, $md1, $md3);
 	}
 
 	&__company-name {
@@ -27,6 +27,9 @@
 		font-weight: 700;
 		line-height: 43px;
 		color: #127bd7;
+		@media (max-width: $md3 + px) {
+			font-size: 1.5em;
+		}
 	}
 
 	&__right-container {
@@ -34,7 +37,7 @@
 
 	&__location-wraper {
 		margin-right: 52px;
-		@include adaptiv-value('margin-right', 26, 8, $md1, $minWidth);
+		@include adaptiv-value('margin-right', 26, 8, $md1, $md3);
 		@media (max-width: $md3+px) {
 			display: none;
 		}
@@ -42,7 +45,7 @@
 
 	&__location-img {
 		width: 27px;
-		@include adaptiv-value('width', 16, 9, $md1, $minWidth);
+		@include adaptiv-value('width', 16, 12, $md1, $md3);
 	}
 
 	&__location {
@@ -51,11 +54,14 @@
 	}
 
 	&__tel-wraper {
+		@media (max-width: $md4+px) {
+			display: none;
+		}
 	}
 
 	&__tel-img {
 		width: 34px;
-		@include adaptiv-value('width', 25, 12, $md1, $minWidth);
+		@include adaptiv-value('width', 25, 18, $md1, $md3);
 	}
 
 	&__tel {
@@ -65,7 +71,63 @@
 		line-height: 24px;
 	}
 
+	&__burger {
+		z-index: 2;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 26px;
+		height: 26px;
+		margin-left: 12px;
+		border: 1px solid #127bd7;
+		border-radius: 50%;
+		&::before,
+		&::after,
+		& span {
+			position: relative;
+			content: '';
+			width: 12px;
+			height: 2px;
+			background-color: #127bd7;
+			transition: all 0.3s;
+		}
+		&::before {
+			top: 6px;
+		}
+		&::after {
+			bottom: 6px;
+		}
+		&.active {
+			&::before {
+				top: 11px;
+				transform: rotate(45deg);
+			}
+			&::after {
+				bottom: 11px;
+				transform: rotate(-45deg);
+			}
+			& span {
+				display: none;
+			}
+		}
+		@media (max-width: $md3+px) {
+			display: flex;
+		}
+	}
+
 	&__menu-wraper {
+		transition: right 0.6s ease;
+		&.active {
+			right: 0;
+		}
+		@media (max-width: $md3 + px) {
+			position: absolute;
+			background-color: #ffffff;
+			width: 100vw;
+			height: 100vh;
+			right: -100vw;
+		}
 	}
 
 	&__menu {
@@ -74,9 +136,15 @@
 		margin: 24px 0;
 		& li {
 			padding-right: 46px;
-			@include adaptiv-value('padding-right', 30, 5, $md1, $minWidth);
+			@include adaptiv-value('padding-right', 46, 20, $md1, $md3);
 			&:last-child {
 				padding-right: 0;
+			}
+		}
+		@media (max-width: $md3 + px) {
+			flex-direction: column;
+			& li {
+				padding: 0 0 15px 20px;
 			}
 		}
 	}
