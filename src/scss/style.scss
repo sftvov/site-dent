@@ -15,7 +15,7 @@ $md4: 539;
 body {
 	color: #000;
 	font-size: 18px;
-	@include adaptiv-value('font-size', 16, 14, $md1, $md3);
+	@include adaptiv-value('font-size', 18, 14, $md1, $md2);
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
@@ -26,6 +26,7 @@ body {
 
 ._container {
 	max-width: $maxWidthContainer + px;
+	width: 100%;
 	margin: 0 auto;
 
 	@media (max-width: $md1+px) {
@@ -56,6 +57,12 @@ body {
 }
 
 .page {
+	position: absolute;
+	top: 166px;
+	@include adaptiv-value('top', 144, 129, $md1, $md3);
+	@media (max-width: $md3+px) {
+		top: 66px;
+	}
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -85,4 +92,4 @@ body {
 }
 
 @import 'header';
-@import 'main';
+@import 'banner';

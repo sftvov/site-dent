@@ -1,16 +1,14 @@
 .header {
+	z-index: 10;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	background-color: #fff;
-	&__top-wrapper {
-		padding: 18px 0 5px 0;
-		border-bottom: 1px solid #127bd733;
-	}
 
 	&__top-content {
 		justify-content: space-between;
+		padding: 18px 0 5px 0;
 	}
 
 	&__logo-wraper {
@@ -28,7 +26,7 @@
 		line-height: 43px;
 		color: #127bd7;
 		@media (max-width: $md3 + px) {
-			font-size: 1.5em;
+			font-size: 1.4em;
 		}
 	}
 
@@ -117,6 +115,7 @@
 	}
 
 	&__menu-wraper {
+		border-top: 1px solid #127bd733;
 		transition: right 0.6s ease;
 		&.active {
 			right: 0;
