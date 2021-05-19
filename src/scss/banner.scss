@@ -1,7 +1,40 @@
 .banner {
-	& img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+	margin: 0 auto;
+	&__img-wrapper {
+		@include adaptiv-value('height', 600, 202, $maxWidth, $minWidth);
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__offer {
+		padding: 28px 41px 0 41px;
+	}
+
+	&__title-wrapper {
+	}
+
+	&__title {
+		font-size: 1.1em;
+		line-height: 22px;
+		& .bold {
+			font-weight: 700;
+		}
+	}
+
+	&__list {
+		margin: 11px 0 19px 0;
+		& li {
+			margin-bottom: 8px;
+			&::before {
+				content: 'V';
+				margin-right: 14px;
+			}
+		}
+	}
+
+	&__submit-wrapper {
 	}
 }
