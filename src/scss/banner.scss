@@ -1,4 +1,5 @@
 .banner {
+	position: relative;
 	margin: 0 auto;
 	&__img-wrapper {
 		@include adaptiv-value('height', 600, 202, $maxWidth, $minWidth);
@@ -9,8 +10,26 @@
 		}
 	}
 
+	&__offer-wrapper {
+		@media (min-width: $md4+px) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			width: 50%;
+		}
+	}
+
 	&__offer {
 		padding: 28px 41px 0 41px;
+		@media (min-width: $md4+px) {
+			position: absolute;
+			margin: auto;
+			height: 200px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+		}
 	}
 
 	&__title-wrapper {
@@ -39,13 +58,6 @@
 	}
 
 	&__submit {
-		font-family: 'Montserrat';
-		font-size: 1.14em;
-		line-height: 24px;
 		width: 100%;
-		padding: 9px 0;
-		color: #ffffff;
-		background-color: #127bd7;
-		border-radius: 8px;
 	}
 }

@@ -11,7 +11,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 18px 0 5px 0;
-		@media (max-width: $md4+px) {
+		@media (max-width: $md3+px) {
 			padding: 2px 0;
 		}
 	}
@@ -29,7 +29,7 @@
 		font-size: 32px;
 		font-weight: 700;
 		line-height: 43px;
-		color: #127bd7;
+		color: $colorMain;
 		@include adaptiv-value('font-size', 28, 17, $md2, $md4);
 	}
 
@@ -59,7 +59,7 @@
 	}
 
 	&__tel-wraper {
-		color: #000000;
+		color: $colorText;
 	}
 
 	&__tel-img {
@@ -80,6 +80,7 @@
 	}
 
 	&__burger {
+		cursor: pointer;
 		z-index: 1;
 		display: none;
 		flex-direction: column;
@@ -88,8 +89,7 @@
 		width: 20px;
 		height: 42px;
 		margin-left: 12px;
-		background-color: #ffffff;
-		// border: 1px solid #127bd7;
+		background-color: $colorLight;
 		border-radius: 50%;
 		&::before,
 		&::after,
@@ -98,7 +98,7 @@
 			content: '';
 			width: 16px;
 			height: 2px;
-			background-color: #127bd7;
+			background-color: $colorMain;
 			transition: all 0.4s;
 		}
 		&::before {
@@ -137,7 +137,7 @@
 		}
 		@media (max-width: $md3 + px) {
 			position: absolute;
-			background-color: #ffffff;
+			background-color: $colorLight;
 			width: 100vw;
 			height: 100vh;
 			right: -100vw;
@@ -155,10 +155,10 @@
 				padding-right: 0;
 			}
 			& a {
-				color: #000000;
+				color: $colorText;
 				&:hover,
 				&:active {
-					color: #2879bd;
+					color: $colorMainHover;
 				}
 			}
 		}

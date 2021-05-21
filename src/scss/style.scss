@@ -9,11 +9,17 @@ $md1: $maxWidthContainer + 40;
 $md2: 1023;
 $md3: 767;
 $md4: 539;
+$colorMain: #127bd7;
+$colorMainHover: #2879bd;
+$colorSecond: #bfdefa;
+$colorBright: #f8c50a;
+$colorText: #000000;
+$colorLight: #ffffff;
 
 @import 'null';
 
 body {
-	color: #000;
+	color: $colorText;
 	font-size: 18px;
 	@include adaptiv-value('font-size', 18, 14, $md1, $md2);
 	font-weight: 600;
@@ -21,6 +27,24 @@ body {
 	font-style: normal;
 	&._lock {
 		overflow: hidden;
+	}
+}
+
+input[type='submit'] {
+	font-family: 'Montserrat';
+	font-size: 1.14em;
+	line-height: 24px;
+	padding: 9px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+._button-first {
+	color: $colorLight;
+	background-color: $colorMain;
+	// &:hover,
+	&:active {
+		background-color: $colorMainHover;
 	}
 }
 
@@ -46,9 +70,6 @@ body {
 	top: 166px;
 	@include adaptiv-value('top', 144, 129, $md1, $md3);
 	@media (max-width: $md3+px) {
-		top: 66px;
-	}
-	@media (max-width: $md4+px) {
 		top: 47px;
 	}
 }
