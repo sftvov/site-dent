@@ -2,7 +2,8 @@
 	position: relative;
 	margin: 0 auto;
 	&__img-wrapper {
-		@include adaptiv-value('height', 600, 202, $maxWidth, $minWidth);
+		height: 600px;
+		@include adaptiv-value('height', 600, 202, $md1, $minWidth);
 		& img {
 			width: 100%;
 			height: 100%;
@@ -11,46 +12,62 @@
 	}
 
 	&__offer-wrapper {
-		@media (min-width: $md4+px) {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			width: 50%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		width: 50%;
+		@media (max-width: $md1+px) {
+			width: 55%;
 		}
 	}
 
 	&__offer {
-		padding: 28px 41px 0 41px;
-		@media (min-width: $md4+px) {
-			position: absolute;
-			margin: auto;
-			height: 200px;
-			top: 0;
-			bottom: 0;
-			left: 0;
+		z-index: 1;
+		position: absolute;
+		margin: 30px 30px 30px 0;
+		padding: 58px 61px 60px 102px;
+		background-color: #ffffff81;
+		border-radius: 15px;
+		@media (max-width: $md4 + px) {
+			padding: 28px 41px 0 41px;
 		}
 	}
 
-	&__title-wrapper {
-	}
-
 	&__title {
-		font-size: 1.1em;
-		line-height: 22px;
+		font-size: 1.66em;
+		line-height: 38px;
+		margin-bottom: 35px;
 		& .bold {
 			font-weight: 700;
 		}
 	}
 
 	&__list {
-		margin: 11px 0 19px 0;
+		display: flex;
+		max-width: 411px;
+		margin: 0 0 54px 0;
 		& li {
+			max-width: 157px;
 			margin-bottom: 8px;
-			&::before {
-				content: 'V';
-				margin-right: 14px;
+			padding-right: 41px;
+			&:last-child {
+				padding-right: 0;
 			}
+			&::before {
+				@media (max-width: $md2+px) {
+					content: url('/img/checked.png');
+					margin-right: 14px;
+				}
+			}
+			@media (max-width: $md2+px) {
+				max-width: 100%;
+			}
+		}
+		@media (max-width: $md2+px) {
+			display: block;
 		}
 	}
 

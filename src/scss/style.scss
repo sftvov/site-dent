@@ -25,6 +25,7 @@ body {
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
+	line-height: 24px;
 	&._lock {
 		overflow: hidden;
 	}
@@ -34,6 +35,7 @@ input[type='submit'] {
 	font-family: 'Montserrat';
 	font-size: 1.14em;
 	line-height: 24px;
+	height: 63px;
 	padding: 9px;
 	border-radius: 8px;
 	cursor: pointer;
@@ -42,7 +44,6 @@ input[type='submit'] {
 ._button-first {
 	color: $colorLight;
 	background-color: $colorMain;
-	// &:hover,
 	&:active {
 		background-color: $colorMainHover;
 	}
@@ -67,8 +68,8 @@ input[type='submit'] {
 
 ._absolute-top {
 	position: absolute;
-	top: 166px;
-	@include adaptiv-value('top', 144, 129, $md1, $md3);
+	top: 159px;
+	@include adaptiv-value('top', 137, 126, $md1, $md3);
 	@media (max-width: $md3+px) {
 		top: 47px;
 	}

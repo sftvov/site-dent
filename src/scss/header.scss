@@ -1,5 +1,5 @@
 .header {
-	z-index: 1;
+	z-index: 100;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
@@ -147,7 +147,7 @@
 	&__menu {
 		display: flex;
 		justify-content: center;
-		margin: 24px 0;
+		margin: 11px 0 24px 0;
 		& li {
 			padding-right: 46px;
 			@include adaptiv-value('padding-right', 46, 20, $md1, $md3);
