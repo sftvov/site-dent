@@ -37,11 +37,20 @@
 	}
 
 	&__title {
+		position: relative;
 		font-size: 1.66em;
 		line-height: 38px;
 		margin-bottom: 35px;
 		& .bold {
 			font-weight: 700;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			left: -27px;
+			width: 2px;
+			height: 100%;
+			background-color: $colorText;
 		}
 	}
 
@@ -50,7 +59,7 @@
 		max-width: 411px;
 		margin: 0 0 54px 0;
 		& li {
-			max-width: 157px;
+			max-width: 145px;
 			margin-bottom: 8px;
 			padding-right: 41px;
 			&:last-child {
