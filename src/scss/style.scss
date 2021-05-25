@@ -25,7 +25,7 @@ body {
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
-	line-height: 24px;
+	line-height: 133%;
 	&._lock {
 		overflow: hidden;
 	}
@@ -34,11 +34,13 @@ body {
 input[type='submit'] {
 	font-family: 'Montserrat';
 	font-size: 1.14em;
-	line-height: 24px;
-	height: 63px;
-	padding: 9px;
+	padding: 20px 51px;
 	border-radius: 8px;
 	cursor: pointer;
+	@media (max-width: $md4+px) {
+		padding: 9px 22px;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	}
 }
 
 ._button-first {
@@ -68,8 +70,8 @@ input[type='submit'] {
 
 ._absolute-top {
 	position: absolute;
-	top: 159px;
-	@include adaptiv-value('top', 137, 126, $md1, $md3);
+	top: 158px;
+	@include adaptiv-value('top', 136, 120, $md1, $md3);
 	@media (max-width: $md3+px) {
 		top: 47px;
 	}
