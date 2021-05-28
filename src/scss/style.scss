@@ -15,6 +15,7 @@ $colorSecond: #bfdefa;
 $colorBright: #f8c50a;
 $colorText: #000000;
 $colorLight: #ffffff;
+$commonSpace: 16px;
 
 @import 'null';
 
@@ -32,7 +33,6 @@ body {
 }
 
 input[type='submit'] {
-	font-family: 'Montserrat';
 	font-size: 1.14em;
 	padding: 20px 51px;
 	border-radius: 8px;
@@ -68,20 +68,11 @@ input[type='submit'] {
 	}
 }
 
-._absolute-top {
-	position: absolute;
-	top: 158px;
-	@include adaptiv-value('top', 136, 120, $md1, $md3);
-	@media (max-width: $md3+px) {
-		top: 47px;
-	}
-}
-
 ._icon-span {
 	display: flex;
 	align-items: center;
 	& > span {
-		margin-left: 16px;
+		margin-left: $commonSpace;
 		@include adaptiv-value('margin-left', 8, 4, $md1, $minWidth);
 	}
 	& img {
@@ -108,14 +99,6 @@ input[type='submit'] {
 	flex: 1 1 auto;
 }
 
-.content {
-	&__block {
-		padding: 20px 0;
-		& p {
-			padding: 5px 0;
-		}
-	}
-}
-
 @import 'header';
 @import 'banner';
+@import 'footer';

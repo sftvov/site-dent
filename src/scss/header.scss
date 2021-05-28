@@ -1,3 +1,12 @@
+._margin-top {
+	margin-top: 158px;
+	@include adaptiv-value('margin-top', 136, 120, $md1, $md3);
+	@media (max-width: $md3+px) {
+		margin-top: 47px;
+	}
+}
+//for block under header
+
 .header {
 	z-index: 100;
 	position: fixed;
