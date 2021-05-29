@@ -11,16 +11,24 @@
 }
 
 //Адаптивное свойство
-@mixin adaptiv-value($property, $startSize, $minSize, $startWidth, $endWidth) {
+@mixin adaptiv-value(
+	$property,
+	$defaultSize,
+	$startSize,
+	$minSize,
+	$startWidth,
+	$endWidth,
+	$measure
+) {
+	#{$property}: $defaultSize + $measure;
 	$addSize: $startSize - $minSize;
-	@media (max-width: #{$startWidth + px}) {
+	@media (max-width: #{$startWidth + $measure}) {
 		#{$property}: calc(
-			#{$minSize + px} + #{$addSize} *
-				((100vw - #{$endWidth + px}) / #{$startWidth - $endWidth})
+			#{$minSize + $measure} + #{$addSize} *
+				((100vw - #{$endWidth + $measure}) / #{$startWidth - $endWidth})
 		);
 	}
-	@media (max-width: #{$endWidth + px}) {
-		#{$property}: $minSize + px;
+	@media (max-width: #{$endWidth + $measure}) {
+		#{$property}: $minSize + $measure;
 	}
 }
-

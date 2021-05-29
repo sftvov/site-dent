@@ -15,14 +15,12 @@ $colorSecond: #bfdefa;
 $colorBright: #f8c50a;
 $colorText: #000000;
 $colorLight: #ffffff;
-$commonSpace: 16px;
 
 @import 'null';
 
 body {
 	color: $colorText;
-	font-size: 18px;
-	@include adaptiv-value('font-size', 18, 14, $md1, $md2);
+	@include adaptiv-value('font-size', 18, 18, 14, $md1, $md2, px);
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
@@ -68,16 +66,16 @@ input[type='submit'] {
 	}
 }
 
-._icon-span {
+._icon-text {
 	display: flex;
 	align-items: center;
-	& > span {
-		margin-left: $commonSpace;
-		@include adaptiv-value('margin-left', 8, 4, $md1, $minWidth);
-	}
 	& img {
 		width: 100%;
 	}
+}
+
+._margin-right {
+	@include adaptiv-value('margin-right', 16, 8, 4, $md1, $minWidth, px);
 }
 
 .wrapper {

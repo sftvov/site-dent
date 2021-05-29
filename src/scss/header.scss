@@ -1,11 +1,10 @@
 ._margin-top {
-	margin-top: 158px;
-	@include adaptiv-value('margin-top', 136, 120, $md1, $md3);
+	@include adaptiv-value('margin-top', 158, 136, 120, $md1, $md3, px);
 	@media (max-width: $md3+px) {
 		margin-top: 47px;
 	}
 }
-//for block under header
+//↑↑↑ for block under header ↑↑↑
 
 .header {
 	z-index: 100;
@@ -29,17 +28,15 @@
 	}
 
 	&__logo {
-		width: 77px;
-		@include adaptiv-value('width', 55, 30, $md1, $md4);
+		@include adaptiv-value('width', 77, 55, 30, $md1, $md4, px);
 	}
 
 	&__company-name {
 		font-family: 'FiraSans';
-		font-size: 32px;
 		font-weight: 700;
 		line-height: 43px;
 		color: $colorMain;
-		@include adaptiv-value('font-size', 28, 17, $md2, $md4);
+		@include adaptiv-value('font-size', 32, 28, 17, $md2, $md4, px);
 	}
 
 	&__right-container {
@@ -48,8 +45,7 @@
 	}
 
 	&__location-wraper {
-		margin-right: 52px;
-		@include adaptiv-value('margin-right', 26, 8, $md1, $md3);
+		@include adaptiv-value('margin-right', 52, 26, 8, $md1, $md3, px);
 		@media (max-width: $md3+px) {
 			display: none;
 		}
@@ -158,8 +154,7 @@
 		justify-content: center;
 		margin: 11px 0 24px 0;
 		& li {
-			padding-right: 46px;
-			@include adaptiv-value('padding-right', 46, 20, $md1, $md3);
+			@include adaptiv-value('padding-right', 46, 46, 20, $md1, $md3, px);
 			&:last-child {
 				padding-right: 0;
 			}

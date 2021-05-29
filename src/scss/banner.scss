@@ -1,8 +1,7 @@
 .banner {
 	position: relative;
 	&__img-wrapper {
-		height: 600px;
-		@include adaptiv-value('height', 600, 202, $md1, $minWidth);
+		@include adaptiv-value('height', 600, 600, 202, $md1, $minWidth, px);
 		& img {
 			width: 100%;
 			height: 100%;
