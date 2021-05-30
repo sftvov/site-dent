@@ -24,14 +24,18 @@ body {
 	font-weight: 600;
 	letter-spacing: 0em;
 	font-style: normal;
-	line-height: 133%;
+	line-height: 1.4;
 	&._lock {
 		overflow: hidden;
 	}
 }
 
+a {
+	color: $colorText;
+}
+
 input[type='submit'] {
-	font-size: 1.14em;
+	font-size: 1.11em;
 	padding: 20px 51px;
 	border-radius: 8px;
 	cursor: pointer;
@@ -76,6 +80,10 @@ input[type='submit'] {
 
 ._margin-right {
 	@include adaptiv-value('margin-right', 16, 8, 4, $md1, $minWidth, px);
+}
+
+._bold {
+	font-weight: 700;
 }
 
 .wrapper {

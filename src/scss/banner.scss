@@ -46,7 +46,7 @@
 		@media (max-width: $md4 + px) {
 			position: static;
 			width: 100%;
-			margin: 0;
+			margin: 0 0 30px 0;
 			padding: 28px 41px 0 41px;
 		}
 	}
@@ -54,13 +54,8 @@
 	&__title {
 		position: relative;
 		font-size: 1.66em;
-		line-height: 38px;
 		@media (max-width: $md3+px) {
-			font-size: 16px;
-			line-height: 140%;
-		}
-		& .bold {
-			font-weight: 700;
+			font-size: 1.13em;
 		}
 		&::before {
 			content: '';
