@@ -1,7 +1,7 @@
 {
-	"name": "study-gulp",
+	"name": "site-dent",
 	"version": "1.0.0",
-	"description": "study-gulp",
+	"description": "site-dent",
 	"main": "index.html",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
