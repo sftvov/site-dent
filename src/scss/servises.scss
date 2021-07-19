@@ -1,0 +1,14 @@
+.block {
+	&__item {
+		margin-bottom: 10px;
+	}
+	&__title {
+		text-align: left;
+		width: 100%;
+		padding: 10px;
+		background-color: transparent;
+	}
+	&__text {
+		padding: 10px 0;
+	}
+}
