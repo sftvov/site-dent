@@ -1,8 +1,30 @@
-@@include('webp.js');
-
+let body = document.querySelector('body');
+let header = document.querySelector('.header');
+let menu = document.querySelector('.header__menu');
 let burger = document.querySelector('.header__burger');
+let page = document.querySelector('.page');
 
-burger.onclick = function () {
-	burger.classList.toggle('active');
-	document.querySelector('.header__menu-wraper').classList.toggle('active');
-};
+// ----------------------------------------------------------------------
+function spaceForHeader() {
+	let headerHeight = header.offsetHeight;
+	page.style.paddingTop = headerHeight + 'px';
+}
+spaceForHeader();
+
+// ----------------------------------------------------------------------
+
+@@include('isMobile.js');
+@@include('webp.js');
+@@include('burger.js');
+@@include('tabs.js');
+
+// ----------------------------------------------------------------------
+
+window.onresize = () => {
+	spaceForHeader();
+  addTouchClassForMobile();
+  closeBurger();
+}
+
+
+

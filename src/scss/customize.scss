@@ -1,0 +1,72 @@
+$colorMain: #127bd7;
+$colorSecond: #bfdefa;
+$colorLight: #ffffff;
+$colorMainHover: #2879bd;
+$colorLinkHover: #2879bd;
+$colorBright: #f8c50a;
+$colorAlert: #ff3451;
+$colorText: #000000;
+$colorTextGray: #808080;
+$colorTextLight: #a8a8a8;
+
+body {
+	color: $colorText;
+	@include adaptiv-value('font-size', 18, 18, 14, $md1, $md2, px);
+	line-height: 1.4;
+	font-weight: 600;
+	letter-spacing: 0em;
+	font-style: normal;
+}
+
+// a {
+// 	color: $colorText;
+// }
+
+input[type='submit'],
+button {
+	font-size: 1.11em;
+	padding: 20px 51px;
+	border-radius: 8px;
+	cursor: pointer;
+	@media (max-width: $md4+px) {
+		padding: 9px 22px;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	}
+}
+
+._underline {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: calc(100% + 15px);
+		height: 1px;
+		background-color: $colorText;
+		transition: width 0.3s ease-out;
+		@include common-value('bottom', -1);
+	}
+}
+
+._button-first {
+	color: $colorLight;
+	background-color: $colorMain;
+	&:active {
+		background-color: $colorMainHover;
+	}
+}
+
+._bold {
+	font-weight: 700;
+}
+
+._icon-text {
+	display: flex;
+	align-items: center;
+	& img {
+		width: 100%;
+	}
+}
+
+._margin-right {
+	@include adaptiv-value('margin-right', 16, 8, 4, $md1, $minWidth, px);
+}

@@ -1,0 +1,10 @@
+._tabs-block {
+	display: none;
+	&._active {
+		display: block;
+	}
+}
+
+body._lock {
+	overflow: hidden;
+}
