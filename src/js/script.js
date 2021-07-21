@@ -28,16 +28,6 @@ window.onresize = () => {
 
 // ----------------------------------------------------------------------
 
-// const spollersArray = document.querySelectorAll('[data-spollers');
-// if (spollersArray.length > 0) {
-// 	const spollersRegular = Array.from(spollersArray).filter((item,index,self) => {
-// 		return !item.dataset.spollers.split(',')[0];
-// 	});
-// 	if (spollersRegular.length > 0) {
-// 		initSpollers(spollersRegular);
-// 	}
-// }
-
 const spollersRegular = document.querySelectorAll('[data-spollers]');
 if (spollersRegular.length > 0) {
 	initSpollers(spollersRegular);
@@ -66,11 +56,13 @@ function initSpollerBody(spollersBlock) {
 function setSpollerAction(e) {
 	const spollerTitle = e.target.closest('[data-spoller]');
 	spollerTitle.classList.toggle('_active');
+	_slideToggle(spollerTitle.nextElementSibling);
 }
 
 let _slideDown = (target, duration = 500) => {
-	let height = target.offsetHeight;
 	target.style.removeProperty('display');
+	target.hidden = false;
+	let height = target.offsetHeight;
 	target.style.overflow = 'hidden';
 	target.style.height = 0;
 	target.style.paddingTop = 0;
@@ -79,7 +71,7 @@ let _slideDown = (target, duration = 500) => {
 	target.style.marginBottom = 0;
 	target.offsetHeight;
 	target.style.transitionProperty = 'height, margin, padding';
-	target.style.transitionDuration = duration + 'ms';		
+	target.style.transitionDuration = duration + 'ms';
 	target.style.height = height +'px';
 	target.style.removeProperty('padding-top');
 	target.style.removeProperty('padding-bottom');
@@ -114,5 +106,11 @@ let _slideUp = (target, duration = 500) => {
 		target.style.removeProperty('transition-duration');
 		target.style.removeProperty('transition-property');
 		target.style.display = 'none';
+		target.hidden = true;
 	}, duration);
+}
+
+let _slideToggle = (target, duration = 500) => {
+	if (target.hidden) _slideDown (target, duration)
+	else  _slideUp (target, duration);
 }
