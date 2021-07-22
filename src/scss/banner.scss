@@ -107,5 +107,9 @@
 		@media (max-width: $md3+px) {
 			width: 100%;
 		}
+		@media (max-width: $md4+px) {
+			padding: 9px 22px;
+			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		}
 	}
 }

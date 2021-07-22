@@ -6,7 +6,7 @@ $colorLinkHover: #2879bd;
 $colorBright: #f8c50a;
 $colorAlert: #ff3451;
 $colorText: #292929;
-$colorTextGray: #808080;
+$colorTextGray: #515151;
 $colorTextLight: #a8a8a8;
 
 body {
@@ -22,16 +22,12 @@ body {
 // 	color: $colorText;
 // }
 
-input[type='submit'],
+[type='submit'],
 button {
 	font-size: 1.11em;
 	padding: 20px 51px;
 	border-radius: 8px;
 	cursor: pointer;
-	@media (max-width: $md4+px) {
-		padding: 9px 22px;
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-	}
 }
 
 ._underline {
