@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 	@@include('_head.html',{ "title":"Главная" })
-	<body>
+	<body class="_lock">
 		<div class="wrapper">
 			@@include('_header.html',{})
 			<main class="page">@@include('_banner.html',{})@@include('_servises.html',{})</main>
 			@@include('_footer.html',{})
 		</div>
-		@@include('_js.html',{})
+		@@include('_popups.html',{}) @@include('_js.html',{})
 	</body>
 </html>

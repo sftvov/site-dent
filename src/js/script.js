@@ -17,6 +17,7 @@ spaceForHeader();
 @@include('webp.js');
 @@include('burger.js');
 @@include('tabs.js');
+@@include('popup.js');
 
 // ----------------------------------------------------------------------
 
