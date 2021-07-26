@@ -18,12 +18,7 @@ body {
 	font-style: normal;
 }
 
-// a {
-// 	color: $colorText;
-// }
-
-[type='submit'],
-button {
+._button {
 	font-size: 1.11em;
 	padding: 20px 51px;
 	border-radius: 8px;
@@ -40,14 +35,6 @@ button {
 		background-color: $colorText;
 		transition: width 0.3s ease-out;
 		@include common-value('bottom', -1);
-	}
-}
-
-._button-first {
-	color: $colorLight;
-	background-color: $colorMain;
-	&:active {
-		background-color: $colorMainHover;
 	}
 }
 

@@ -1,0 +1,92 @@
+.discount {
+	width: 100%;
+	padding-bottom: 40px;
+	&__title {
+		font-family: 'FiraSans';
+		text-transform: uppercase;
+		font-size: 2em;
+		font-weight: 700;
+		text-align: center;
+		color: $colorTextGray;
+		@include common-value('padding-top', 12);
+		@include common-value('padding-bottom', 12);
+	}
+
+	&__slider {
+	}
+
+	&__slide {
+	}
+}
+.d-slide {
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 25px;
+		width: 80%;
+	}
+
+	&__img {
+		display: flex;
+		align-items: center;
+		@include common-value('min-height', 41);
+		@include common-value('min-width', 43);
+		@include common-value('height', 41);
+		@include common-value('width', 43);
+		& picture {
+		}
+		& img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__title {
+		padding-top: 10px;
+		font-size: #{(24 / 18) + 'em'};
+		font-weight: 700;
+		text-align: left;
+	}
+
+	&__signature {
+		font-size: #{(14 / 18) + 'em'};
+		font-weight: 400;
+		text-align: left;
+	}
+
+	&__action {
+		min-height: 40%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	&__price {
+		font-size: 2em;
+		font-weight: 700;
+		text-align: left;
+		color: $colorMain;
+	}
+
+	&__button {
+		color: $colorLight;
+		background-color: $colorMain;
+		&:active,
+		&:hover {
+			background-color: $colorMainHover;
+		}
+	}
+}

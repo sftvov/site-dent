@@ -18,6 +18,7 @@ spaceForHeader();
 @@include('burger.js');
 @@include('tabs.js');
 @@include('popup.js');
+@@include('sliders.js');
 
 // ----------------------------------------------------------------------
 
