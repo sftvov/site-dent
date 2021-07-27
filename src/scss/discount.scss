@@ -2,14 +2,6 @@
 	width: 100%;
 	padding-bottom: 40px;
 	&__title {
-		font-family: 'FiraSans';
-		text-transform: uppercase;
-		font-size: 2em;
-		font-weight: 700;
-		text-align: center;
-		color: $colorTextGray;
-		@include common-value('padding-top', 12);
-		@include common-value('padding-bottom', 12);
 	}
 
 	&__slider {

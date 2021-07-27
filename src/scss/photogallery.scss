@@ -1,0 +1,27 @@
+.photogallery {
+	width: 100%;
+	padding-bottom: 20px;
+	background-color: $colorSecond;
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		column-gap: 2%;
+		@include common-value('height', 78);
+	}
+
+	&__item {
+		width: 18.4%;
+		margin-bottom: 2%;
+		& img {
+			width: 100%;
+		}
+	}
+}
