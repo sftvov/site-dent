@@ -13,14 +13,13 @@ spaceForHeader();
 
 // ----------------------------------------------------------------------
 
-@@include('isMobile.js');
-@@include('webp.js');
-@@include('burger.js');
-@@include('tabs.js');
-@@include('popup.js');
-@@include('sliders.js');
-@@include('libs/lightgallery.min.js');
-@@include('gallery.js');
+@@include('functions/isMobile.js');
+@@include('functions/webp.js');
+@@include('elements/burger.js');
+@@include('elements/tabs.js');
+@@include('elements/popups.js');
+@@include('elements/sliders.js');
+@@include('elements/gallery.js');
 
 // ----------------------------------------------------------------------
 

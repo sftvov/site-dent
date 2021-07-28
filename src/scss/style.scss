@@ -55,11 +55,10 @@ $md4: 539.95;
 }
 
 @import 'functions';
-@import 'header';
-@import 'banner';
-@import 'servises';
-@import 'discount';
-@import 'photogallery';
-@import 'footer';
-@import 'popup';
-@import 'functions/lightgallery.scss';
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/servises';
+@import 'blocks/discount';
+@import 'blocks/photogallery';
+@import 'blocks/footer';
+@import 'blocks/popup';

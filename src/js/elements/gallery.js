@@ -1,4 +1,7 @@
 //Gallery
+
+@@include('libs/lightgallery.min.js');
+
 let gallery = document.querySelectorAll('._gallery');
 if (gallery) {
 	gallery_init();
