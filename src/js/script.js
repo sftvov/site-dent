@@ -20,6 +20,7 @@ spaceForHeader();
 @@include('elements/popups.js');
 @@include('elements/sliders.js');
 @@include('elements/gallery.js');
+@@include('elements/scroll.js');
 
 // ----------------------------------------------------------------------
 

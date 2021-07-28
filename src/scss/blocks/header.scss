@@ -154,7 +154,8 @@
 			& a {
 				color: $colorText;
 				&:hover,
-				&:active {
+				&:active,
+				&._active {
 					color: $colorMainHover;
 				}
 			}
