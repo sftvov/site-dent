@@ -21,6 +21,7 @@ spaceForHeader();
 @@include('elements/sliders.js');
 @@include('elements/gallery.js');
 @@include('elements/scroll.js');
+@@include('elements/spollers.js');
 
 // ----------------------------------------------------------------------
 
@@ -31,7 +32,7 @@ window.onresize = () => {
 }
 
 // ----------------------------------------------------------------------
-
+/*
 const spollersRegular = document.querySelectorAll('[data-spollers]');
 if (spollersRegular.length > 0) {
 	initSpollers(spollersRegular);
@@ -118,3 +119,5 @@ let _slideToggle = (target, duration = 500) => {
 	if (target.hidden) _slideDown (target, duration)
 	else  _slideUp (target, duration);
 }
+
+*/
