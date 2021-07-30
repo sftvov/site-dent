@@ -83,14 +83,14 @@ let slider_about = new Swiper('.discount__slider', {
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
 	},
 	/*
 	breakpoints: {
