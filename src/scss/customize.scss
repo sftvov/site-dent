@@ -19,6 +19,7 @@ body {
 }
 
 ._button {
+	text-align: center;
 	font-size: 1.11em;
 	padding: 20px 51px;
 	border-radius: 8px;
@@ -47,6 +48,26 @@ body {
 		background-color: $colorText;
 		transition: width 0.3s ease-out;
 		@include common-value('bottom', -1);
+	}
+}
+
+._cross {
+	cursor: pointer;
+	padding: 20px;
+	&::after,
+	&::before {
+		position: absolute;
+		top: 19px;
+		right: 10px;
+		content: '';
+		width: 20px;
+		height: 2px;
+	}
+	&::after {
+		transform: rotate(45deg);
+	}
+	&::before {
+		transform: rotate(-45deg);
 	}
 }
 

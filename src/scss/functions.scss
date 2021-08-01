@@ -9,16 +9,5 @@ body._lock {
 	overflow: hidden;
 }
 
-._scr-item {
-	position: relative;
-	left: -500px;
-	opacity: 0;
-	transition: all 1s ease;
-	&._active {
-		left: 0;
-		opacity: 1;
-	}
-}
-
 @import 'funcs/lightgallery.scss';
-@import 'funcs/swiper.scss';
+@import 'funcs/swiper/sw.scss';

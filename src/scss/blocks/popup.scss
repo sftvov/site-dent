@@ -1,4 +1,5 @@
 .popup {
+	overflow-y: scroll;
 	display: none;
 	z-index: 100;
 	position: fixed;
@@ -11,26 +12,37 @@
 		display: block;
 	}
 	&__container {
-		height: 100%;
+		min-height: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
 	&__body {
+		position: relative;
 		display: flex;
 		column-gap: 20px;
-		width: 100%;
-		min-height: 50%;
-		padding: 20px;
+		padding: 50px;
 		background-color: $colorSecond;
 		border-radius: 10px;
+
+		@media (max-width: $md4+px) {
+			flex-direction: column;
+			padding: 20px;
+			margin: 10px 0;
+		}
+		@media (min-width: $md2+px) {
+			width: 70%;
+		}
 	}
 
 	&__offer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		@media (max-width: $md4+px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__title {
@@ -61,7 +73,13 @@
 	&__personal-data-agreement {
 		justify-self: flex-end;
 	}
-}
-
-._inderline {
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		&::before,
+		&::after {
+			background-color: $colorText;
+		}
+	}
 }
