@@ -5,8 +5,10 @@ let burger = document.querySelector('.header__burger');
 let page = document.querySelector('.page');
 
 // ----------------------------------------------------------------------
+
+let headerHeight;
 function spaceForHeader() {
-	let headerHeight = header.offsetHeight;
+	headerHeight = header.offsetHeight;
 	page.style.paddingTop = headerHeight + 'px';
 }
 spaceForHeader();
@@ -22,6 +24,8 @@ spaceForHeader();
 @@include('elements/gallery.js');
 @@include('elements/scroll.js');
 @@include('elements/spollers.js');
+
+// ----------------------------------------------------------------------
 
 // ----------------------------------------------------------------------
 

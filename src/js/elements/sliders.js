@@ -26,8 +26,8 @@ let slider_about = new Swiper('.discount__slider', {
 	},
 	// Arrows
 	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+		nextEl: '.next-round',
+		prevEl: '.prev-round',
 	},
 	/*
 	breakpoints: {

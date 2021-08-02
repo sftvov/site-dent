@@ -13,3 +13,9 @@ function closeBurger() {
 	burger.classList.remove('_active');
 	menu.classList.remove('_active');
 }
+
+menu.addEventListener('click', (e) => {
+	if (e.target.tagName === 'A') {
+		closeBurger();
+	}
+});
