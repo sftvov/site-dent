@@ -1,0 +1,59 @@
+.our-doctors {
+	background-color: #dfeffc;
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__body {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+	&__minidoctor {
+	}
+
+	&__slider {
+	}
+
+	&__slide {
+	}
+}
+.minidoctor {
+	&__img {
+	}
+
+	&__name {
+	}
+
+	&__speciality {
+	}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.od-slide {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	&__img {
+	}
+
+	&__description {
+	}
+
+	&__top {
+	}
+
+	&__name {
+	}
+
+	&__speciality {
+	}
+
+	&__text {
+	}
+}

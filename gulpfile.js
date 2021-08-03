@@ -56,11 +56,7 @@ function browserSync() {
 }
 
 function html() {
-	return src(path.src.html)
-		.pipe(fileinclude())
-		.pipe(webphtml())
-		.pipe(dest(path.build.html))
-		.pipe(browsersync.stream());
+	return src(path.src.html).pipe(fileinclude()).pipe(webphtml()).pipe(dest(path.build.html)).pipe(browsersync.stream());
 }
 
 function css() {
@@ -145,15 +141,7 @@ function fontsStyle() {
 					let fontname = items[i].split('.');
 					fontname = fontname[0];
 					if (c_fontname != fontname) {
-						fs.appendFile(
-							source_folder + '/scss/fonts.scss',
-							'@include font("' +
-								fontname +
-								'", "' +
-								fontname +
-								'", "400", "normal");\r\n',
-							cb
-						);
+						fs.appendFile(source_folder + '/scss/fonts.scss', '@include font("' + fontname + '", "' + fontname + '", "400", "normal");\r\n', cb);
 					}
 					c_fontname = fontname;
 				}
