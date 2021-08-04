@@ -1,5 +1,7 @@
 .our-doctors {
+	width: 100%;
 	background-color: #dfeffc;
+	padding-bottom: 40px;
 	&__container {
 	}
 
@@ -7,28 +9,45 @@
 	}
 
 	&__body {
-		display: grid;
-		grid-template-columns: 1fr 2fr 1fr;
-		align-items: flex-end;
+		display: flex;
 	}
 
 	&__minidoctor {
+		width: 20%;
 	}
 
 	&__slider {
+		max-width: 60%;
+		overflow: hidden;
 	}
 
 	&__slide {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 .minidoctor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+
 	&__img {
 	}
 
 	&__name {
+		font-size: 14/18 + em;
+		font-weight: 500;
+		line-height: calc(18 / 14);
+		text-align: center;
+		padding: 12px 80px;
 	}
 
 	&__speciality {
+		font-size: 12/18 + em;
+		font-weight: 500;
+		line-height: calc(14 / 12);
+		text-align: center;
 	}
 }
 .swiper-container {
@@ -38,27 +57,31 @@
 .swiper-slide {
 }
 .od-slide {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(auto, 407px);
 	&__img {
-	}
-
-	&__description {
-		height: 100%;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(3, minmax(auto, 33.33%));
+		grid-row-start: 1;
+		grid-row-end: 4;
 	}
 
 	&__name {
+		font-size: 24/18 + em;
+		font-weight: 700;
+		line-height: calc(24 / 24);
+		text-align: left;
+		color: $colorMain;
 	}
 
 	&__speciality {
+		font-weight: 500;
+		line-height: calc(24 / 18);
+		text-align: left;
+		margin-top: 3px;
+		margin-bottom: 17px;
 	}
 
 	&__text {
-		overflow: hidden;
-		text-overflow: ellipsis;
+		font-size: 14/18 + em;
+		font-weight: 500;
+		line-height: calc(21 / 14);
+		text-align: left;
 	}
 }
