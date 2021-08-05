@@ -12,7 +12,7 @@ let slider_about = new Swiper('.discount__slider', {
 	observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
-	autoHeight: true,
+	// autoHeight: true,
 	speed: 800,
 	//touchRatio: 0,
 	//simulateTouch: false,
@@ -50,45 +50,45 @@ let slider_about = new Swiper('.discount__slider', {
 		},
 	},
 	*/
-	on: {
-		lazyImageReady: function () {
-			ibg();
-		},
-	}
+	// on: {
+	// 	lazyImageReady: function () {
+	// 		ibg();
+	// 	},
+	// }
 	// And if we need scrollbar
 	//scrollbar: {
 	//	el: '.swiper-scrollbar',
 	//},
 });
 let slider_doctors = new Swiper('.our-doctors__slider', {
-	/*
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
+	
+	// effect: 'fade',
+	// autoplay: {
+	// 	delay: 3000,
+	// 	disableOnInteraction: false,
+	// },
+	
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
-	spaceBetween: 0,
-	autoHeight: true,
-	speed: 800,
+	spaceBetween: 50,
+	// autoHeight: true,
+	speed: 0,
 	//touchRatio: 0,
-	//simulateTouch: false,
-	//loop: true,
+	simulateTouch: false,
+	// loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	// pagination: {
-	// 	el: '.swiper-pagination',
-	// 	clickable: true,
-	// },
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
 	// Arrows
-	// navigation: {
-	// 	nextEl: '.next-round',
-	// 	prevEl: '.prev-round',
-	// },
+	navigation: {
+		nextEl: '.next-round',
+		prevEl: '.prev-round',
+	},
 	/*
 	breakpoints: {
 		320: {

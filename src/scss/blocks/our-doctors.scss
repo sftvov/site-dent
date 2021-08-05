@@ -3,54 +3,42 @@
 	background-color: #dfeffc;
 	padding-bottom: 40px;
 	&__container {
+		position: relative;
 	}
 
 	&__title {
 	}
 
-	&__body {
-		display: flex;
-	}
-
-	&__minidoctor {
-		width: 20%;
-	}
-
 	&__slider {
 		max-width: 60%;
-		overflow: hidden;
+		padding-top: 100px;
 	}
 
 	&__slide {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
-}
-.minidoctor {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-
-	&__img {
+	& .swiper-navigation-container {
+		top: 25%;
+		left: 0;
+		height: auto;
 	}
-
-	&__name {
-		font-size: 14/18 + em;
-		font-weight: 500;
-		line-height: calc(18 / 14);
-		text-align: center;
-		padding: 12px 80px;
+	& .swiper-container {
+		position: static;
 	}
-
-	&__speciality {
-		font-size: 12/18 + em;
-		font-weight: 500;
-		line-height: calc(14 / 12);
-		text-align: center;
+	& .swiper-slide-prev {
+		& > * {
+			grid-column-start: 2;
+			grid-column-end: 3;
+		}
+		& .od-slide__text {
+			display: none;
+		}
+		& .od-slide__img {
+			grid-row-end: 2;
+			height: 200px;
+		}
 	}
-}
-.swiper-container {
 }
 .swiper-wrapper {
 }
@@ -58,8 +46,12 @@
 }
 .od-slide {
 	&__img {
+		height: 400px;
 		grid-row-start: 1;
 		grid-row-end: 4;
+		& img {
+			height: 100%;
+		}
 	}
 
 	&__name {
