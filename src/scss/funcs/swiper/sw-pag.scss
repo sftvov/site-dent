@@ -19,6 +19,22 @@
 	left: 0;
 	width: 100%;
 }
+/* Fraction */
+.swiper-pagination-fraction {
+	font-size: 24/18 + em;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0.25em;
+	& .swiper-pagination-current {
+		font-size: 26/18 + em;
+		font-weight: 700;
+		color: $colorMain;
+	}
+	& .swiper-pagination-total {
+		font-size: 20/18 + em;
+	}
+}
+
 /* Bullets */
 .swiper-pagination-bullets-dynamic {
 	overflow: hidden;
