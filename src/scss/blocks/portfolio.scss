@@ -1,0 +1,41 @@
+.portfolio {
+	width: 100%;
+	padding-bottom: 40px;
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__body {
+	}
+
+	&__case {
+		display: grid;
+		grid-template-columns: repeat (3, 1fr);
+		min-width: 100%;
+	}
+}
+.case {
+	&__title {
+	}
+
+	&__before {
+	}
+
+	&__after {
+	}
+
+	&__slider {
+		width: 100%;
+	}
+
+	&__img {
+	}
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

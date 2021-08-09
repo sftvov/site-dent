@@ -80,7 +80,6 @@ let slider_doctors = new Swiper('.our-doctors__slider', {
 	},
 	initialSlide: 1,
 	effect: 'fade',
-	// Arrows
 	navigation: {
 		nextEl: '.next-round',
 		prevEl: '.prev-round',
@@ -88,4 +87,27 @@ let slider_doctors = new Swiper('.our-doctors__slider', {
 	controller: {
 		control: mini_slider_doctors,
 	},
+});
+let reviews = new Swiper('.reviews__slider', {
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: '.next-round',
+		prevEl: '.prev-round',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	breakpoints: {
+		768: {
+			slidesPerView: 2,		},
+	},
+});
+let portfolio = new Swiper('.case__slider', {
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
 });
