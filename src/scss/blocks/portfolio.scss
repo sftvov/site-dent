@@ -11,12 +11,13 @@
 	}
 
 	&__case {
-		display: grid;
-		grid-template-columns: repeat (3, 1fr);
-		min-width: 100%;
 	}
 }
 .case {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	max-width: 100%;
 	&__title {
 	}
 
@@ -27,15 +28,28 @@
 	}
 
 	&__slider {
-		width: 100%;
+		overflow: hidden;
+		grid-column-start: 2;
+		grid-column-end: 4;
+		max-width: 100%;
+	}
+
+	&__slide {
+		max-height: 100%;
 	}
 
 	&__img {
+		display: flex;
+		justify-content: space-around;
+	}
+	.swiper-wrapper {
+		height: auto;
+	}
+	.swiper-pagination-fraction {
+		padding-top: 10px;
 	}
 }
 .swiper-container {
-}
-.swiper-wrapper {
 }
 .swiper-slide {
 }

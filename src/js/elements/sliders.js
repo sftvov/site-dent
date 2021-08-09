@@ -110,4 +110,12 @@ let portfolio = new Swiper('.case__slider', {
 	observeParents: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
+	pagination: {
+		el: '.swiper-pagination-fraction',
+		type: 'fraction',
+	},
+	navigation: {
+		nextEl: '.next-arrow',
+		prevEl: '.prev-arrow',
+	},
 });
