@@ -101,7 +101,7 @@ let reviews = new Swiper('.reviews__slider', {
 		el: '.swiper-pagination',
 	},
 	breakpoints: {
-		768: {
+		540: {
 			slidesPerView: 2,		},
 	},
 });

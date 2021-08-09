@@ -3,18 +3,15 @@
 	z-index: 10;
 	cursor: pointer;
 	position: absolute;
-	bottom: -13px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 60px;
-	height: 60px;
+	bottom: 10px;
+	width: 14px;
+	height: 14px;
 	&::after,
 	&::before,
 	& span {
 		position: absolute;
 		content: '';
-		height: 5px;
+		height: 2px;
 		border-radius: 2px;
 		background-color: $colorMain;
 	}
@@ -30,40 +27,40 @@
 }
 
 .prev-arrow {
-	left: calc(50% - 100px);
+	left: calc(50% - 70px);
 	&::before {
-		top: 20px;
-		left: 0;
-		width: 24px;
+		top: 3px;
+		left: -4px;
+		width: 10px;
 		transform: rotate(-45deg);
 	}
 	&::after {
-		bottom: 20px;
-		left: 0;
-		width: 24px;
+		bottom: 3px;
+		left: -4px;
+		width: 10px;
 		transform: rotate(45deg);
 	}
 	& span {
-		left: 3px;
-		width: 36px;
+		top: 6px;
+		width: 14px;
 	}
 }
 .next-arrow {
-	right: calc(50% - 100px);
+	right: calc(50% - 70px);
 	&::before {
-		top: 20px;
-		right: 0;
-		width: 24px;
+		top: 3px;
+		right: -4px;
+		width: 10px;
 		transform: rotate(45deg);
 	}
 	&::after {
-		bottom: 20px;
-		right: 0;
-		width: 24px;
+		bottom: 3px;
+		right: -4px;
+		width: 10px;
 		transform: rotate(-45deg);
 	}
 	& span {
-		right: 3px;
-		width: 36px;
+		top: 6px;
+		width: 14px;
 	}
 }

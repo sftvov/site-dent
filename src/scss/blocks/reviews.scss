@@ -14,9 +14,7 @@
 	.swiper-container {
 		position: static;
 	}
-	.swiper-wrapper {
-	}
-	.swiper-slide {
+	& .swi .swiper-slide {
 	}
 	.swiper-navigation-container {
 		left: 0;
@@ -35,7 +33,7 @@
 	text-align: left;
 	display: grid;
 	grid-template-rows: 50px 50px auto 50px;
-	min-height: 350px;
+	align-self: stretch;
 	padding: 27px 34px 27px 24px;
 	box-shadow: 0px 4px 40px 0px #{$colorMain + '26'};
 
@@ -52,11 +50,11 @@
 
 	&__text {
 		overflow: hidden;
-		margin-bottom: 15px;
-		padding-bottom: 5px;
+		padding-bottom: 10px;
 		border-bottom: 2px solid $colorTextLight;
 	}
 
 	&__date {
+		padding-top: 15px;
 	}
 }
