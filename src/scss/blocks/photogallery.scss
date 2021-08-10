@@ -1,6 +1,6 @@
 .photogallery {
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	background-color: $colorSecond;
 	&__container {
 	}
@@ -8,20 +8,36 @@
 	&__title {
 	}
 
-	&__body {
+	&__slider {
+		overflow: hidden;
+		height: 400px;
+		padding-bottom: 40px;
+	}
+
+	&__slide {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		flex-wrap: wrap;
-		column-gap: 2%;
-		@include common-value('height', 78);
+		align-items: center;
+		row-gap: 10px;
 	}
 
 	&__item {
-		width: 18.4%;
-		margin-bottom: 2%;
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		&--big {
+		}
 		& img {
 			width: 100%;
 		}
+	}
+	.swiper-wrapper {
+		display: flex;
+		align-items: stretch;
+	}
+	.swiper-slide {
+	}
+	.swiper-pagination {
+		bottom: 0;
 	}
 }

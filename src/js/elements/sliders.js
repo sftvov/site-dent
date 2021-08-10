@@ -119,3 +119,36 @@ let portfolio = new Swiper('.case__slider', {
 		prevEl: '.prev-arrow',
 	},
 });
+let photogallery = new Swiper('.photogallery__slider', {
+	observer: true,
+	observeParents: true,
+	slidesPerView:5,
+	spaceBetween: 50,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		539: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		767: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1023: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+		1259: {
+			slidesPerView: 5,
+			spaceBetween: 30,
+		},
+	},
+});
