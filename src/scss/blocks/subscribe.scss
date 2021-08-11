@@ -1,0 +1,50 @@
+.subscribe {
+	padding-bottom: 40px;
+	&__title {
+	}
+
+	&__container {
+	}
+
+	&__body {
+		display: flex;
+		width: 1010px;
+		height: 560px;
+		padding: 93px 74px 57px 100px;
+		border-radius: 60px;
+		background: $colorSecond;
+	}
+
+	&__offer {
+	}
+}
+
+.offer {
+	flex-basis: 60%;
+	font-weight: 600;
+	&__title {
+		font-size: 30/18 + em;
+		line-height: calc(38 / 30);
+		text-align: left;
+	}
+
+	&__list {
+	}
+
+	&__item {
+		font-size: 20/18 + em;
+		line-height: calc(24 / 20);
+		text-align: left;
+		padding-top: 35px;
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	&__input {
+	}
+
+	&__checkbox {
+	}
+}
