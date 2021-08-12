@@ -1,6 +1,6 @@
 <article class="popup popup_sign-up">
 	<div class="popup__container _container">
-		<div class="popup__body">
+		<!-- <div class="popup__body">
 			<div class="popup__offer">
 				<h2 class="popup__title"><span class="_bold">Бесплатная</span> консультация включает в себя:</h2>
 				<ul class="popup__list">
@@ -15,7 +15,24 @@
 				<input class="popup__input" type="submit" value="Записаться" />
 				<span class="popup__personal-data-agreement">Нажимая на кнопку, я соглашаюсь на <span class="_inderline">обработку персональных данных</span></span>
 			</div>
-			<span class="popup__close _cross"> </span>
+		</div> -->
+		<div class="popup__body subscribe__body">
+			<div class="subscribe__offer offer">
+				<h3 class="offer__title"><span class="_bold">Бесплатная</span> консультация включает в себя:</h3>
+				<ul class="offer__list">
+					<li class="offer__item">Первичный осмотр</li>
+					<li class="offer__item">Снимки</li>
+					<li class="offer__item">План лечения</li>
+				</ul>
+			</div>
+			<form class="form" action="#">
+				<input class="form__input" id="formName" type="text" placeholder="Имя" />
+				<input class="form__input" id="formTel" type="tel" placeholder="Телефон" />
+				<button type="submit" class="form__button _button _button--main">Записаться</button>
+				<input class="form__checkbox" id="formPopupCheckbox" type="checkbox" />
+				<label class="form__agreement" for="formPopupCheckbox"><span class="custom__checkbox--tick"></span> Я согласен на обработку своих персональных данных</label>
+			</form>
+			<span class="popup__close _cross"></span>
 		</div>
 	</div>
 </article>

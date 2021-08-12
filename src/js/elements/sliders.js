@@ -134,19 +134,19 @@ let photogallery = new Swiper('.photogallery__slider', {
 			spaceBetween: 0,
 			autoHeight: true,
 		},
-		539: {
+		540: {
 			slidesPerView: 2,
 			spaceBetween: 20,
 		},
-		767: {
+		768: {
 			slidesPerView: 3,
 			spaceBetween: 20,
 		},
-		1023: {
+		1024: {
 			slidesPerView: 4,
 			spaceBetween: 30,
 		},
-		1259: {
+		1260: {
 			slidesPerView: 5,
 			spaceBetween: 30,
 		},

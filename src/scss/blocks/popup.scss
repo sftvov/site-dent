@@ -17,66 +17,14 @@
 		align-items: center;
 		justify-content: center;
 	}
-
-	&__body {
-		position: relative;
-		display: flex;
-		column-gap: 20px;
-		padding: 50px;
-		background-color: $colorSecond;
-		border-radius: 10px;
-
-		@media (max-width: $md4+px) {
-			flex-direction: column;
-			padding: 20px;
-			margin: 10px 0;
-		}
-		@media (min-width: $md2+px) {
-			width: 70%;
-		}
-	}
-
-	&__offer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		@media (max-width: $md4+px) {
-			margin-bottom: 20px;
-		}
-	}
-
-	&__title {
-		font-family: Montserrat;
-		font-size: 1.7em;
-		text-align: left;
-		line-height: 1.26;
-	}
-
-	&__list {
-		margin-top: 20px;
-		& li {
-			padding-top: 10px;
-		}
-	}
-
-	&__data-collect {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	&__input {
-		min-height: 20px;
-		margin-bottom: 20px;
-	}
-
-	&__personal-data-agreement {
-		justify-self: flex-end;
-	}
 	&__close {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 20px;
+		right: 20px;
+		@media (max-width: $md3+px) {
+			top: 0;
+			right: 0;
+		}
 		&::before,
 		&::after {
 			background-color: $colorText;
