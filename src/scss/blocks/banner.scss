@@ -10,41 +10,35 @@
 	}
 
 	&__offer-wrapper {
-		position: absolute;
 		top: 0;
 		bottom: 0;
 		right: 0;
 		display: flex;
 		align-items: center;
-		width: 50%;
-		@media (max-width: $md1+px) {
-			width: 55%;
+		width: 100%;
+		@media (min-width: $md1+px) {
+			width: 50%;
 		}
-		@media (max-width: $md4+px) {
-			position: static;
-			width: 100%;
+		@media (min-width: $md4+px) {
+			position: absolute;
+			width: 55%;
 		}
 	}
 
 	&__offer {
-		z-index: 1;
-		position: absolute;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		margin: 30px 30px 30px 0;
+		margin-right: 30px;
 		padding: 58px 61px 60px 102px;
 		background-color: #ffffff81;
 		border-radius: 15px;
 		@media (max-width: $md2+px) {
 			padding: 17px 30px 31px 30px;
-			align-items: flex-start;
 		}
 		@media (max-width: $md3+px) {
 			padding: 22px;
 		}
 		@media (max-width: $md4 + px) {
-			position: static;
 			width: 100%;
 			margin: 0 0 30px 0;
 			padding: 28px 41px 0 41px;
@@ -53,9 +47,9 @@
 
 	&__title {
 		position: relative;
-		font-size: 1.66em;
-		@media (max-width: $md3+px) {
-			font-size: 1.13em;
+		font-size: 1.13em;
+		@media (min-width: $md3+px) {
+			font-size: 1.66em;
 		}
 		&::before {
 			content: '';
@@ -71,51 +65,42 @@
 	}
 
 	&__list {
-		display: flex;
-		max-width: 411px;
-		margin: 35px 0 54px 0;
-		@media (max-width: $md2+px) {
+		margin: 8px 0 16px 0;
+		@media (min-width: $md2+px) {
+			display: flex;
+			justify-content: space-between;
+			column-gap: 41px;
+			margin: 35px 0 54px 0;
+		}
+		@media (min-width: $md3+px) {
 			margin: 12px 0 24px 0;
 		}
-		@media (max-width: $md3+px) {
-			margin: 8px 0 16px 0;
-		}
 		& li {
-			max-width: 145px;
-			margin-bottom: 8px;
-			padding-right: 41px;
-			&:last-child {
-				padding-right: 0;
+			@media (min-width: $md2+px) {
+				display: flex;
+				flex-direction: column;
 			}
-			&::before {
-				@media (max-width: $md2+px) {
+			@media (max-width: $md2+px) {
+				margin-bottom: 8px;
+				&::before {
 					content: url('/img/checked.png');
 					margin-right: 14px;
 				}
 			}
-			@media (max-width: $md2+px) {
-				max-width: 100%;
-			}
-		}
-		@media (max-width: $md2+px) {
-			display: block;
 		}
 	}
 
 	&__submit {
 		align-self: center;
-		color: $colorLight;
-		background-color: $colorMain;
 		@media (max-width: $md3+px) {
 			width: 100%;
+			padding: 9px 22px;
 		}
 		@media (max-width: $md4+px) {
-			padding: 9px 22px;
 			box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-		}
-		&:active,
-		&:hover {
-			background-color: $colorMainHover;
+			&:active {
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+			}
 		}
 	}
 }

@@ -19,16 +19,23 @@ body {
 }
 
 ._button {
+	position: relative;
 	text-align: center;
 	font-size: 1.11em;
 	padding: 20px 51px;
 	border-radius: 8px;
 	cursor: pointer;
+	&:active {
+		top: 2px;
+	}
 }
 
 ._button--main {
-	color: #ffffff;
+	color: $colorLight;
 	background-color: $colorMain;
+	&:hover {
+		background-color: $colorMainHover;
+	}
 }
 
 ._title {
