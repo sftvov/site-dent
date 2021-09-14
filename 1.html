@@ -1,0 +1,185 @@
+<table width="100%" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+	<tbody>
+		<tr align="center">
+			<td>
+				<div style="max-width: 600px; width: 100%">
+					<table width="100%" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+						<tbody>
+							<tr>
+								<td width="50%" style="padding: 1rem" align="center">
+									<img alt="logo" src="/upload/medialibrary/15d/gstgjly6xllwj4a0qrtpy2090vkhe7wq/Logo_horizontal%201.png" style="display: block; width: 182px; height: 40px" title="Logo_horizontal 1.png" />
+								</td>
+								<td width="50%" style="padding: 1rem" align="center">
+									<span style="color: #293651; font: 10px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block">ВСЕ ДЛЯ LASH &amp; BROW МАСТЕРА</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table bgcolor="#293651" width="100%" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+						<tbody>
+							<tr>
+								<td align="center" style="padding: 0.7rem 0 0.7rem 2.7rem">
+									<a href="https://vsalon-shop.ru/catalog/category/materialy-dlya-naraschivaniya-resnits/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #ffffff; font: 10px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 1px solid #ffffff" target="_blank">НАРАЩИВАНИЕ РЕСНИЦ</a>
+								</td>
+								<td align="center" style="padding: 0.7rem 0 0.7rem 0.7rem">
+									<a href="https://vsalon-shop.ru/catalog/category/vse-dlya-brovei/" style="padding-right: 0.5rem; text-decoration: none; color: #ffffff; font: 10px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 1px solid #ffffff" target="_blank">ОФОРМЛЕНИЕ БРОВЕЙ</a>
+								</td>
+								<td align="center" style="padding: 0.7rem 0 0.7rem 0.7rem">
+									<a href="https://vsalon-shop.ru/catalog/category/depi/" style="padding-right: 0.5rem; text-decoration: none; color: #ffffff; font: 10px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 1px solid #ffffff" target="_blank">ДЕПИЛЯЦИЯ</a>
+								</td>
+								<td align="center" style="padding: 0.7rem 2.7rem 0.7rem 0.7rem">
+									<a href="https://vsalon-shop.ru/catalog/category/permanentnyi-makiyazh-i-mikrobleiding/" style="padding-right: 0.5rem; text-decoration: none; color: #ffffff; font: 10px Arial, sans-serif; -webkit-text-size-adjust: none; display: block" target="_blank">ПЕРМАНЕНТНЫЙ МАКИЯЖ</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table>
+						<tbody>
+							<tr>
+								<td style="padding: 1rem 2.7rem 1rem 2.7rem; color: #293651; font: 16px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none">Ваш купон:<span style="color: #39e0d4; font: 16px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: inline-block">#COUPON#</span></td>
+							</tr>
+							<tr>
+								<td style="padding: 0rem 2.7rem 0.5rem 2.7rem">
+									<span style="color: #293651; font: 12px Arial, sans-serif; -webkit-text-size-adjust: none; display: block">#DISCOUNT_TOOLTIP# </span>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 0rem 2.7rem 0.5rem 2.7rem">
+									<span style="color: #293651; font: 12px Arial, sans-serif; -webkit-text-size-adjust: none; display: block">Менеджер перезвонит в течение суток после совершения заказа. При срочном заказе вы можете связаться с нами самостоятельно по номеру <b>8 800 301 10 29</b></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table width="100%">
+						<tbody>
+							<tr>
+								<td align="left" style="padding: 0 2.7rem 0 2.7rem">
+									<span style="color: #293651; font: 16px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem">Здравствуйте, #AUTHOR#.</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table bgcolor="#e5e5e5" width="100%" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+						<tbody>
+							<tr>
+								<td style="padding: 1rem 2.7rem 1rem 2.7rem">
+									<table width="100%">
+										<tbody>
+											<tr align="left">
+												<td>
+													<span style="color: #293651; font: 16px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem">Данные покупателя</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<?EventMessageThemeCompiler::includeComponent(
+    "bitrix:sale.business.value.mail",
+    "business_mail_custom",
+    Array(
+      "DISPLAY_EMPTY" =>
+									"Y", "DISPLAY_NAME" => "Y", "FIELD" => array("FIO","EMAIL","PHONE","ADDRESS"), "GROUP" => "7", "ORDER_ID" => "{#ORDER_ID#}", "PROVIDER" => "PROPERTY" ) );?>
+									<table>
+										<tbody>
+											<tr>
+												<td>
+													<span style="color: #000000; font: 12px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem">Вы можете следить за статусом заказа в <a href="https://vsalon-shop.ru/personal/orders/">персональном разделе</a> сайта. Для входа в этот раздел потребуется ввести логин и пароль от личного кабинета.</span>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<span style="color: #39e0d4; font: 14px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block">Спасибо за покупку! Желаем вам хорошего настроения<img alt="love" src="/upload/medialibrary/3a7/rabmjrdgy3tw3cxq2hdgduxdhet8f8oe/Vector.png" style="display: inline-block; margin-left: 0.3rem" title="Vector.png" /></span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table width="100%" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+						<tbody>
+							<tr>
+								<td align="center" style="padding: 1rem 0 1rem 2.3rem">
+									<a href="https://vsalon-shop.ru/help/payment/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #293651; font: 9px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 2px solid #69cffa" target="_blank">УСЛОВИЯ ОПЛАТЫ</a>
+								</td>
+								<td align="center" style="padding: 1rem 0 1rem 0.7rem">
+									<a href="https://vsalon-shop.ru/help/delivery/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #293651; font: 9px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 2px solid #69cffa" target="_blank">УСЛОВИЯ ДОСТАВКИ</a>
+								</td>
+								<td align="center" style="padding: 1rem 0 1rem 0.7rem">
+									<a href="https://vsalon-shop.ru/help/exchange/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #293651; font: 9px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 2px solid #69cffa" target="_blank">ОБМЕН И ВОЗВРАТ</a>
+								</td>
+								<td align="center" style="padding: 1rem 0 1rem 0.7rem">
+									<a href="https://vsalon-shop.ru/contacts/stores/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #293651; font: 9px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 2px solid #69cffa" target="_blank">МАГАЗИНЫ</a>
+								</td>
+								<td align="center" style="padding: 1rem 0 1rem 0.7rem">
+									<a href="https://vsalon-shop.ru/company/reviews/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #293651; font: 9px Arial, sans-serif; -webkit-text-size-adjust: none; display: block; border-right: 2px solid #69cffa" target="_blank">ОТЗЫВЫ</a>
+								</td>
+								<td align="center" style="padding: 1rem 2.3rem 1rem 0.7rem">
+									<a href="https://vsalon-shop.ru/company/news/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; color: #293651; font: 9px Arial, sans-serif; -webkit-text-size-adjust: none; display: block" target="_blank">НОВОСТИ</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table bgcolor="#293651" width="100%">
+						<tbody>
+							<tr>
+								<td style="padding: 1rem 2.7rem 1rem 2.7rem">
+									<table width="100%" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0">
+										<tbody>
+											<tr>
+												<td width="17%">
+													<img alt="logo" src="/upload/medialibrary/a2b/nxj0nlwkply94rcavgvva1qlkhip416l/logo.png" style="display: block; height: 60px; width: 60px" title="logo.png" />
+												</td>
+												<td width="33%">
+													<span style="color: #ffffff; font: 14px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem"><a style="color: #ffffff" href="https://vsalon-shop.ru/">vsalon-shop.ru</a></span> <span style="color: #ffffff; font: 14px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem"><a style="color: #ffffff" href="tel:88003011029">8 800 301 10 29</a></span> <span style="color: #ffffff; font: 14px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem"><a style="color: #ffffff" href="mailto:info@vsalon-shop.ru">info@vsalon-shop.ru</a></span>
+												</td>
+												<td width="25%" valign="top">
+													<span style="color: #ffffff; font: 14px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem">Мы в соцсетях</span>
+													<table>
+														<tbody>
+															<tr>
+																<td>
+																	<a href="https://vk.com/vsalonshop" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; -webkit-text-size-adjust:none; display: block; target="><img alt="vk (2) 1.png" src="/upload/medialibrary/a84/vni01pfx6164t9ngt23x7ulglxbrv2lc/vk%20(2)%201.png" style="display: block; height: 18px; width: 18px" title="vk (2) 1.png" /></a>
+																</td>
+																<td>
+																	<a href="https://ok.ru/profile/576416670578" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; -webkit-text-size-adjust:none; display: block; target="><img alt="Frame 5.png" src="/upload/medialibrary/cbb/kcwj9tofq9kdzdgqfxc7xa1uqe5ihwb6/Frame%205.png" style="display: block; height: 18px; width: 18px" title="Frame 5.png" /></a>
+																</td>
+																<td>
+																	<a href="https://www.instagram.com/vsalonshop.ru/" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; -webkit-text-size-adjust:none; display: block; target="><img alt="Frame 3.png" src="/upload/medialibrary/36b/9pu35y8g7ocng5z52eyzf1wtlq78agpo/Frame%203.png" style="display: block; height: 18px; width: 18px" title="Frame 3.png" /></a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+												<td width="25%" valign="top">
+													<span style="color: #ffffff; font: 14px Arial, sans-serif; font-weight: 700; -webkit-text-size-adjust: none; display: block; margin-bottom: 0.5rem">Напишите нам</span>
+													<table>
+														<tbody>
+															<tr>
+																<td>
+																	<a href="https://wa.me/79118129099" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; -webkit-text-size-adjust:none; display: block; target="><img alt="Frame 4.png" src="/upload/medialibrary/c88/dyn47k0r41nzfs8dtonzm3kniodrwl5h/Frame%204.png" style="display: block; height: 18px; width: 18px" title="Frame 4.png" /></a>
+																</td>
+																<td>
+																	<a href="https://t.me/vsalonshop" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; -webkit-text-size-adjust:none; display: block; target="><img alt="telegram 1.png" src="/upload/medialibrary/131/y4styrf811oudz4wi11finwb5bthmral/telegram%201.png" style="display: block; height: 18px; width: 18px" title="telegram 1.png" /></a>
+																</td>
+																<td>
+																	<a href="viber://chat?number=+79118129099" style="padding-right: 0.5rem; font-weight: 700; text-decoration: none; -webkit-text-size-adjust:none; display: block; target="><img alt="viber (1) 1.png" src="/upload/medialibrary/47d/86rltszlzko6eu40t82agc6j92f5b04o/viber%20(1)%201.png" style="display: block; height: 18px; width: 18px" title="viber (1) 1.png" /></a>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>

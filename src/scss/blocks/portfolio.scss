@@ -10,7 +10,7 @@
 	&__body {
 		display: flex;
 		flex-direction: column;
-		row-gap: 40px;
+		@include common-value('row-gap', 8);
 	}
 
 	&__case {
@@ -20,7 +20,6 @@
 	display: grid;
 	grid-template-columns: 0.5fr 1fr 1fr;
 	justify-items: center;
-	max-width: 100%;
 	@media (max-width: $md2+px) {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -32,7 +31,7 @@
 		grid-row-start: 1;
 		grid-row-end: 3;
 		justify-self: stretch;
-		padding-bottom: 20px;
+		@include common-value('padding-bottom', 6);
 		@media (max-width: $md2+px) {
 			text-align: center;
 			grid-row-end: 2;
@@ -62,22 +61,24 @@
 	}
 
 	&__slide {
-		max-height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		@include common-value('padding-top', 2);
 	}
 
 	&__img {
-		display: flex;
-		justify-content: space-around;
-		@include adaptiv-value('height', auto, 250, 105, $md3, $md4, px);
+		width: 45%;
 		& img {
-			height: 100%;
+			width: 100%;
 		}
 	}
 	.swiper-wrapper {
 		height: auto;
+		align-items: center;
 	}
 	.swiper-pagination-fraction {
-		padding-top: 40px;
+		@include common-value('padding-top', 8);
 	}
 }
 .swiper-container {

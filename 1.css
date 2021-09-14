@@ -1,0 +1,4 @@
+body .top_slider_wrapp .main-slider .main-slider__item:not(.image) .img img {
+	max-height: none;
+	height: 100%;
+}

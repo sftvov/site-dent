@@ -1,8 +1,6 @@
 .discount {
 	width: 100%;
 	padding-bottom: 40px;
-	&__container {
-	}
 	&__title {
 	}
 
@@ -18,9 +16,13 @@
 	display: flex;
 	justify-content: center;
 
+	&__container {
+		width: 100%;
+	}
+
 	&__body {
 		display: grid;
-		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-columns: 160px 2fr 1fr;
 		grid-template-rows: 110px 110px;
 		align-items: center;
 		@include common-value('column-gap', 8);

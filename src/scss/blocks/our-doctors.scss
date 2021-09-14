@@ -47,7 +47,7 @@
 .od-slide {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 95px 35px 230px 40px;
+	grid-template-rows: 85px auto auto;
 
 	&[class$='-active'] > * {
 		transition: opacity 1s ease;
@@ -59,7 +59,7 @@
 	}
 	&__img {
 		grid-row-start: 1;
-		grid-row-end: 5;
+		grid-row-end: 4;
 		height: 400px;
 		padding-right: 10px;
 		& img {
@@ -116,7 +116,7 @@
 		}
 	}
 	&__img {
-		height: 200px;
+		height: 250px;
 		& img {
 			height: 100%;
 		}
