@@ -3,7 +3,7 @@ let header = document.querySelector('.header');
 let menu = document.querySelector('.header__menu');
 let burger = document.querySelector('.header__burger');
 let page = document.querySelector('.page');
-
+let forms = document.getElementsByTagName('form');
 // ----------------------------------------------------------------------
 
 let headerHeight;
@@ -12,6 +12,35 @@ function spaceForHeader() {
 	page.style.paddingTop = headerHeight + 'px';
 }
 spaceForHeader();
+
+// ----------------------------------------------------------------------
+
+for(form of forms) {
+	form.addEventListener('submit', formSend);
+}
+
+function formSend(e) {
+	e.preventDefault();
+	let error = formValidate(form);
+}
+
+function formValidate(form) {
+	let error = 0;
+	formReq = form.querySelectorAll('._req');
+	for (input of formReq) {
+
+		if (input.getAttribute('type') === 'checkbox' &&  input.checked === false) {
+			error++;
+			console.log('checkbox is not checked');
+		}
+		
+		if (input.value === '' ) {
+			error++;
+			console.log('field is empty');
+		}
+		
+	}
+}
 
 // ----------------------------------------------------------------------
 
