@@ -31,15 +31,22 @@ function formValidate(form) {
 
 		if (input.getAttribute('type') === 'checkbox' &&  input.checked === false) {
 			error++;
-			console.log('checkbox is not checked');
 		}
 		
 		if (input.value === '' ) {
 			error++;
-			console.log('field is empty');
 		}
 		
 	}
+}
+
+function form_add_error(input) {
+	input.classList.add('_error');
+	input.parentElement.classList.add('_error');
+}
+function form_remove_error(input) {
+	input.classList.remove('_error');
+	input.parentElement.classList.remove('_error');
 }
 
 // ----------------------------------------------------------------------
