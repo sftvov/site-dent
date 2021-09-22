@@ -135,6 +135,10 @@ body {
 	}
 }
 
+input._error + .form__agreement .custom__checkbox--tick {
+	border-color: $colorAlert;
+}
+
 input:checked + .form__agreement .custom__checkbox--tick {
 	&::before,
 	&::after {

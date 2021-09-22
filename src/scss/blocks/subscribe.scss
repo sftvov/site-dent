@@ -83,6 +83,9 @@
 		padding: 9px 0;
 		background-color: $colorSecond;
 		border-bottom: 2px solid $colorText;
+		&._error {
+			border-bottom-color: $colorAlert;
+		}
 	}
 	&__button {
 		@include common-value('margin-top', 8);
