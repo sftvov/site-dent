@@ -16,7 +16,7 @@ $md4: 539.95;
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
-	max-width: $maxWidth + px;
+	// max-width: $maxWidth + px;
 	min-height: 100%;
 	overflow: hidden;
 	display: flex;
@@ -69,4 +69,3 @@ $md4: 539.95;
 @import 'blocks/subscribe';
 @import 'blocks/contacts';
 @import 'blocks/footer';
-@import 'blocks/popup';

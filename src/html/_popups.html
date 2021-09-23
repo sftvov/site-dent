@@ -1,7 +1,7 @@
 <article class="popup popup_sign-up">
 	<div class="popup__container _container">
-		<div class="popup__body subscribe__body">
-			<div class="subscribe__offer offer">
+		<div class="popup__body free">
+			<div class="offer">
 				<h3 class="offer__title"><span class="_bold">Бесплатная</span> консультация включает в себя:</h3>
 				<ul class="offer__list">
 					<li class="offer__item">Первичный осмотр</li>
@@ -9,12 +9,27 @@
 					<li class="offer__item">План лечения</li>
 				</ul>
 			</div>
-			<form class="form" action="#">
+			<form id="formPop" class="form" action="#">
 				<input class="form__input _req" id="formPopupName" type="text" placeholder="Имя" />
 				<input class="form__input _req _phone" id="formPopupTel" type="tel" placeholder="Телефон" />
 				<button type="submit" class="form__button _button _button--main">Записаться</button>
-				<input class="form__checkbox _req" id="formPopupCheckbox" type="checkbox" />
+				<input class="form__checkbox _req" id="formPopupCheckbox" type="checkbox" checked />
 				<label class="form__agreement" for="formPopupCheckbox"><span class="custom__checkbox--tick"></span> Я согласен на обработку своих персональных данных</label>
+			</form>
+			<span class="popup__close _cross"></span>
+		</div>
+	</div>
+</article>
+<article class="popup popup_massage">
+	<div class="popup__container _container">
+		<div class="popup__body massage">
+			<form id="formPopMassage" class="form" action="#">
+				<input class="form__input _req" id="formPopupNameMassage" type="text" placeholder="Имя" />
+				<input class="form__input _req _phone" id="formPopupTelMassage" type="tel" placeholder="Телефон" />
+				<textarea class="form__textarea" id="formPopupTextMassage" type="text" placeholder="Хотите записаться? Или есть вопрос?"></textarea>
+				<button type="submit" class="form__button _button _button--main">Отправить</button>
+				<input class="form__checkbox _req" id="formPopupCheckboxMassage" type="checkbox" checked />
+				<label class="form__agreement" for="formPopupCheckboxMassage"><span class="custom__checkbox--tick"></span> Я согласен на обработку своих персональных данных</label>
 			</form>
 			<span class="popup__close _cross"></span>
 		</div>

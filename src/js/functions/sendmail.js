@@ -4,11 +4,10 @@ for (form of forms) {
 
 async function formSend(e) {
 	e.preventDefault();
-	let form = e.target.parentNode;
+	let form = e.target;
 	let error = formValidate(form);
-	let formData = new FormData(form);
-
 	if (error === 0) {
+		let formData = new FormData(form);
 		form.classList.add('_sending');
 		let response = await fetch('../sendmail.php', {
 			method: 'POST',
@@ -18,8 +17,10 @@ async function formSend(e) {
 			let result = await response.json();
 			alert(result.message);
 			form.reset();
+			form.classList.remove('_sending');
 		} else {
 			alert('ошибка');
+			form.classList.remove('_sending');
 		}
 	} else {
 		alert('заполните обязательные поля');

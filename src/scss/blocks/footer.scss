@@ -55,9 +55,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 55px;
-			height: 55px;
-			margin-right: 29px;
+			@include common-value('width', 11);
+			@include common-value('height', 11);
+			@include common-value('margin-right', 6);
 			background-color: $colorLight;
 			border-radius: 50%;
 		}

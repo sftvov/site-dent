@@ -19,15 +19,15 @@ body {
 }
 
 ._button {
-	position: relative;
 	text-align: center;
 	font-size: 1.11em;
 	padding: 20px 51px;
 	border-radius: 8px;
 	cursor: pointer;
 	&:active {
-		top: 2px;
+		transform: translateY(2px);
 	}
+	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 ._button--main {
@@ -103,7 +103,7 @@ body {
 	&__checkbox {
 		&--tick {
 			position: relative;
-			width: 24px;
+			min-width: 24px;
 			height: 24px;
 			margin-right: 10px;
 			border: 1px solid $colorText;
