@@ -7,8 +7,8 @@ async function formSend(e) {
 	let form = e.target;
 	let error = formValidate(form);
 	if (error === 0) {
+		loading.classList.add('_visible');
 		let formData = new FormData(form);
-		form.classList.add('_sending');
 		let response = await fetch('../sendmail.php', {
 			method: 'POST',
 			body: formData,
@@ -17,10 +17,10 @@ async function formSend(e) {
 			let result = await response.json();
 			alert(result.message);
 			form.reset();
-			form.classList.remove('_sending');
+			loading.classList.remove('_visible');
 		} else {
 			alert('ошибка');
-			form.classList.remove('_sending');
+			loading.classList.remove('_visible');
 		}
 	} else {
 		alert('заполните обязательные поля');

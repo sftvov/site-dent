@@ -1,3 +1,8 @@
+@import 'funcs/popup.scss';
+@import 'funcs/loading.scss';
+@import 'funcs/lightgallery.scss';
+@import 'funcs/swiper/sw.scss';
+
 ._tabs-block {
 	display: none;
 	&._active {
@@ -9,6 +14,7 @@ body._lock {
 	overflow: hidden;
 }
 
-@import 'funcs/popup.scss';
-@import 'funcs/lightgallery.scss';
-@import 'funcs/swiper/sw.scss';
+._visible {
+	visibility: visible;
+	opacity: 1;
+}

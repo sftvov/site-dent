@@ -4,14 +4,14 @@ let menu = document.querySelector('.header__menu');
 let burger = document.querySelector('.header__burger');
 let page = document.querySelector('.page');
 let forms = document.getElementsByTagName('form');
+let loading = document.querySelector('.loading');
 // ----------------------------------------------------------------------
 
 let headerHeight;
 function spaceForHeader() {
 	headerHeight = header.offsetHeight;
 	page.style.paddingTop = headerHeight + 'px';
-}
-spaceForHeader();
+}	
 
 // ----------------------------------------------------------------------
 
@@ -34,6 +34,10 @@ window.onresize = () => {
 	spaceForHeader();
   addTouchClassForMobile();
   closeBurger();
+}
+
+window.onload = () => {	
+	spaceForHeader();
 }
 
 // ----------------------------------------------------------------------

@@ -49,6 +49,15 @@
 		}
 		& p {
 			margin-bottom: 10px;
+			transition: all 1s ease;
+			transform: translateX(50vw);
+			visibility: hidden;
+			opacity: 0;
+			&._active {
+				transform: translateX(0);
+				visibility: visible;
+				opacity: 1;
+			}
 		}
 	}
 

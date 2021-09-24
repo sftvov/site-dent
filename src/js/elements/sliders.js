@@ -8,6 +8,10 @@ let slider_about = new Swiper('.discount__slider', {
 		disableOnInteraction: false,
 	},
 	*/
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true,
+	},
 	observer: true,
 	observeParents: true,
 	slidesPerView: 1,
@@ -89,8 +93,13 @@ let slider_doctors = new Swiper('.our-doctors__slider', {
 	},
 });
 let reviews = new Swiper('.reviews__slider', {
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: true,
+	},
 	observer: true,
 	observeParents: true,
+	grabCursor: true,
 	slidesPerView: 1,
 	spaceBetween: 30,
 	navigation: {
@@ -108,6 +117,7 @@ let reviews = new Swiper('.reviews__slider', {
 let portfolio = new Swiper('.case__slider', {
 	observer: true,
 	observeParents: true,
+	grabCursor: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
 	pagination: {
@@ -120,8 +130,13 @@ let portfolio = new Swiper('.case__slider', {
 	},
 });
 let photogallery = new Swiper('.photogallery__slider', {
+	autoplay: {
+		delay: 1000,
+		disableOnInteraction: true,
+	},
 	observer: true,
 	observeParents: true,
+	grabCursor: true,
 	slidesPerView:5,
 	spaceBetween: 50,
 	pagination: {
