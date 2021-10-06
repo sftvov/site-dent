@@ -35,21 +35,21 @@
 	}
 
 	&__img {
+		display: flex;
+		justify-content: center;
 		& img {
 			max-width: 100%;
-			max-height: 100%;
 		}
 	}
 
 	&__text {
 		align-self: center;
 		font-style: italic;
-		@media (max-width: $md3+px) {
-			background-color: #{$colorLight + '75'};
+		@media (min-width: $md4+px) {
+			padding-left: 10px;
 		}
 		@media (max-width: $md4+px) {
-			position: absolute;
-			bottom: 0;
+			padding-top: 20px;
 		}
 	}
 

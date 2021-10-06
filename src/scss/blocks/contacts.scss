@@ -23,8 +23,8 @@
 			grid-column-end: 3;
 			order: 3;
 		}
-		transition: all 1s ease;
-		transform: translateX(-30vw);
+		transition: all 0.8s ease;
+		transform: translateX(-5vw);
 		visibility: hidden;
 		opacity: 0;
 		&._active {

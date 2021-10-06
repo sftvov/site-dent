@@ -15,9 +15,9 @@ function spaceForHeader() {
 
 // ----------------------------------------------------------------------
 
+@@include('functions/sendmail.js');
 @@include('functions/isMobile.js');
 @@include('functions/webp.js');
-@@include('functions/sendmail.js');
 @@include('elements/burger.js');
 @@include('elements/tabs.js');
 @@include('elements/popups.js');

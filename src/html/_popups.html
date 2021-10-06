@@ -10,8 +10,8 @@
 				</ul>
 			</div>
 			<form id="formPop" class="form" action="#">
-				<input class="form__input _req" id="formPopupName" type="text" placeholder="Имя" />
-				<input class="form__input _req _phone" id="formPopupTel" type="tel" placeholder="Телефон" />
+				<input class="form__input _req" id="formPopupName" name="formName" type="text" placeholder="Имя" />
+				<input class="form__input _req _phone" id="formPopupTel" name="formTel" type="tel" placeholder="Телефон" />
 				<button type="submit" class="form__button _button _button--main">Записаться</button>
 				<input class="form__checkbox _req" id="formPopupCheckbox" type="checkbox" checked />
 				<label class="form__agreement" for="formPopupCheckbox"><span class="custom__checkbox--tick"></span> Я согласен на обработку своих персональных данных</label>
@@ -24,9 +24,9 @@
 	<div class="popup__container _container">
 		<div class="popup__body massage">
 			<form id="formPopMassage" class="form" action="#">
-				<input class="form__input _req" id="formPopupNameMassage" type="text" placeholder="Имя" />
-				<input class="form__input _req _phone" id="formPopupTelMassage" type="tel" placeholder="Телефон" />
-				<textarea class="form__textarea" id="formPopupTextMassage" type="text" placeholder="Хотите записаться? Или есть вопрос?"></textarea>
+				<input class="form__input _req" id="formPopupNameMassage" name="formPopupNameMassage" type="text" placeholder="Имя" />
+				<input class="form__input _req _phone" id="formPopupTelMassage" name="formPopupTelMassage" type="tel" placeholder="Телефон" />
+				<textarea class="form__textarea" id="formPopupTextMassage" name="formPopupTextMassage" type="text" placeholder="Хотите записаться? Или есть вопрос?"></textarea>
 				<button type="submit" class="form__button _button _button--main">Отправить</button>
 				<input class="form__checkbox _req" id="formPopupCheckboxMassage" type="checkbox" checked />
 				<label class="form__agreement" for="formPopupCheckboxMassage"><span class="custom__checkbox--tick"></span> Я согласен на обработку своих персональных данных</label>
